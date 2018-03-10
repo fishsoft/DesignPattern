@@ -1,2 +1,5 @@
-# DesignPattern
-init design pattern
+# 设计模式
+#### 工厂模式
+简单工厂
+工厂方法
+抽象工厂

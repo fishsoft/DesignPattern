@@ -22,6 +22,9 @@ public class ExampleUnitTest {
         assertEquals(4, 2 + 2);
     }
 
+    /**
+     * 简单工厂测试
+     */
     @Test
     public void testSimpleFactory() {
         Api api = SimpleFactory.create(1);
@@ -30,14 +33,20 @@ public class ExampleUnitTest {
         SimpleFactory.create(ImpB.class).operate();
     }
 
+    /**
+     * 工厂方法测试
+     */
     @Test
     public void testFactoryMethod() {
         ExportOperator operator = new ExportPDFOperation();
         operator.export("财务报表");
     }
 
+    /**
+     * 抽象工厂测试
+     */
     @Test
-    public void testAbstractFactory(){
+    public void testAbstractFactory() {
         new IOSFactory().create().button();
     }
 }
