@@ -1,0 +1,2 @@
+# DesignPattern
+init design pattern
